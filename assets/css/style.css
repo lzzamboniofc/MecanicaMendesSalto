@@ -12,13 +12,22 @@
 }
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 body {
   font-family: Inter, sans-serif;
   background: var(--paper);
   color: var(--ink);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 0;
   overflow-x: hidden;
 }
+img, svg, video, canvas { max-width: 100%; }
+main, header, section, footer, nav { max-width: 100%; }
 a {
   text-decoration: none;
 }
@@ -880,4 +889,15 @@ footer {
   .modal-visual-caption strong {
     font-size: 38px;
   }
+}
+
+/* Correção de overflow lateral em dispositivos móveis */
+@media (max-width: 991px) {
+  html, body { width:100%; max-width:100%; overflow-x:clip; }
+  .container, .container-fluid { max-width:100%; }
+  .hero, .hero-visual, .hero-photo, .section, .services, .why, .diagnostic-cta, .contact, footer { width:100%; max-width:100%; }
+  .cursor-glow { display:none; }
+}
+@supports not (overflow: clip) {
+  @media (max-width: 991px) { html, body { overflow-x:hidden; } }
 }

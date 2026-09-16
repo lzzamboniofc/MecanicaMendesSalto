@@ -402,3 +402,10 @@
         padding:0 9px;
     }
 }
+
+/* Contenção mobile das páginas internas */
+@media(max-width:767px){
+ .service-page,.service-page main,.service-hero,.warning-section,.benefit-section,.related,.service-final,.service-page footer{width:100%;max-width:100%;overflow-x:clip;}
+ .service-page .container{max-width:100%;}
+ .service-breadcrumb{flex-wrap:wrap;}
+}

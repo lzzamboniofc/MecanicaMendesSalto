@@ -11,7 +11,9 @@
     color: #fff;
     position: relative;
     padding-top: 90px;
-    background: linear-gradient(0deg, rgba(7, 9, 10, .92), rgba(7, 9, 10, .18)), linear-gradient(90deg, rgba(7, 9, 10, .9), rgba(7, 9, 10, .1)), var(--service-image) center/cover
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
 }
 
 .service-hero:after {

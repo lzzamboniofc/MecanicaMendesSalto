@@ -277,8 +277,11 @@ a {
 }
 .image-stack img {
   width: 100%;
-  height: 610px;
-  object-fit: cover;
+  height: auto;
+  max-height: 680px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
   filter: saturate(0.65);
 }
 .image-stack:after {
@@ -918,3 +921,8 @@ footer {
 .faq-accordion .accordion-body{padding:0 0 25px;color:#aeb5b6;font-size:14px;line-height:1.8;}
 .faq-accordion .accordion-body a{color:var(--accent);}
 @media(max-width:767px){.purpose-list article{grid-template-columns:1fr;gap:10px;}.purpose-list article span{grid-row:auto;}.faq-accordion .accordion-button{font-size:21px;}}
+
+/* Enquadramento da foto histórica */
+@media (max-width: 991px) {
+  .image-stack img { max-height: none; }
+}

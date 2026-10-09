@@ -921,3 +921,10 @@ footer {
 @media (max-width: 991px) {
   .image-stack img { max-height: none; }
 }
+
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

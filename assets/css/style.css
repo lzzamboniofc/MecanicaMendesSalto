@@ -203,7 +203,7 @@ a {
   background:
     linear-gradient(90deg, #0a0d0f 0%, transparent 50%),
     linear-gradient(0deg, rgba(5, 7, 8, 0.65), rgba(5, 7, 8, 0.1)),
-    url("../images/mecanicamendes-hero.webp") center / cover no-repeat,
+    url("../images/mecanicamendes.png") center / cover no-repeat,
     url("../images/servicos/hero-image.png") center / cover no-repeat;
 }
 .scan-line {

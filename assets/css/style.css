@@ -200,10 +200,7 @@ a {
 .hero-photo {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(90deg, rgba(10, 13, 15, 0.72) 0%, rgba(10, 13, 15, 0.18) 38%, transparent 62%),
-    linear-gradient(0deg, rgba(5, 7, 8, 0.22), rgba(5, 7, 8, 0.02)),
-    url("../images/mecanicamendes.png") center / cover no-repeat;
+  background: linear-gradient(90deg, #0a0d0f 0%, transparent 50%), linear-gradient(0deg, rgb(5 7 8 / 0%), rgb(5 7 8 / 0%)), url("../images/mecanicamendes.png") center / cover no-repeat;
 }
 .scan-line {
   position: absolute;
@@ -281,7 +278,6 @@ a {
   object-fit: contain;
   object-position: center;
   display: block;
-  filter: saturate(0.65);
 }
 .image-stack:after {
   content: "";

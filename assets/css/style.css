@@ -203,8 +203,7 @@ a {
   background:
     linear-gradient(90deg, #0a0d0f 0%, transparent 50%),
     linear-gradient(0deg, rgba(5, 7, 8, 0.65), rgba(5, 7, 8, 0.1)),
-    url("../images/mecanicamendes.png") center / cover no-repeat,
-    url("../images/servicos/hero-image.png") center / cover no-repeat;
+    url("../images/mecanicamendes.png") center / cover no-repeat;
 }
 .scan-line {
   position: absolute;
@@ -678,7 +677,7 @@ footer {
   .hero-photo {
     background:
       linear-gradient(0deg, #0a0d0f 0%, rgba(5, 7, 8, 0.2)),
-      url("../images/servicos/hero-image.png") center / cover no-repeat;
+      url("../images/mecanicamendes.png") center / cover no-repeat;
   }
   .hero .col-lg-7 {
     position: relative;

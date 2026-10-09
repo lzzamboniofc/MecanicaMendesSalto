@@ -35,7 +35,7 @@
             <div class="d-flex flex-wrap gap-3">
                         <a class="btn btn-outline-light btn-lg service-nav-back"
                             href="../index.html#servicos" aria-label="Voltar aos serviços"><i class="bi bi-arrow-left"></i> <span>Voltar</span></a>
-            <a class="btn btn-brand btn-sm" href="https://wa.me/5511973311973" target="_blank"><i
+            <a class="btn btn-brand btn-sm" href="https://wa.me/5511973311973" target="_blank" rel="noopener noreferrer"><i
                     class="bi bi-whatsapp"></i> Agendar avaliação</a></div>
         </div>
     </nav>
@@ -50,7 +50,7 @@
                     <h1>Freios em Salto</h1>
                     <p>Sua segurança começa onde o carro para.</p>
                     <div class="d-flex flex-wrap gap-3"><a class="btn btn-brand btn-lg"
-                            href="https://wa.me/5511973311973" target="_blank">Falar com a oficina <i
+                            href="https://wa.me/5511973311973" target="_blank" rel="noopener noreferrer">Falar com a oficina <i
                                 class="bi bi-arrow-up-right"></i></a><a class="btn btn-outline-light btn-lg"
                             href="../index.html#servicos"><i class="bi bi-arrow-left"></i> Voltar aos serviços</a></div>
                 </div>
@@ -74,7 +74,7 @@
                         <div class="service-side"><span>ATENDIMENTO EM SALTO</span><strong>Percebeu algum
                                 sintoma?</strong>
                             <p>Fale com a equipe e explique o que está acontecendo com o seu veículo.</p><a
-                                href="https://wa.me/5511973311973" target="_blank">Chamar no WhatsApp <i
+                                href="https://wa.me/5511973311973" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp <i
                                     class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -134,18 +134,19 @@
                         <h2>Converse com quem<br><em>entende do seu carro.</em></h2>
                     </div>
                     <div class="col-lg-4 text-lg-end"><a class="btn btn-light btn-lg" href="https://wa.me/5511973311973"
-                            target="_blank">Falar no WhatsApp <i class="bi bi-whatsapp"></i></a></div>
+                            target="_blank" rel="noopener noreferrer">Falar no WhatsApp <i class="bi bi-whatsapp"></i></a></div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="container">
-            <div class="footer-bottom"><span>© 2026 Mecânica Mendes Salto.</span><a href="../index.html"
+            <div class="footer-bottom"><span>© <span class="current-year">2026</span> Mecânica Mendes Salto.</span><a href="../index.html"
                     style="color:#8a9295">Voltar para o site</a></div>
         </div>
     </footer>
-    <a class="floating-whatsapp" href="https://wa.me/5511973311973" target="_blank"><i class="bi bi-whatsapp"></i></a>
+    <a class="floating-whatsapp" href="https://wa.me/5511973311973" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+<script>document.querySelectorAll(".current-year").forEach(el => el.textContent = new Date().getFullYear());</script>
 </body>
 
 </html>

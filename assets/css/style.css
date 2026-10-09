@@ -902,3 +902,19 @@ footer {
 @supports not (overflow: clip) {
   @media (max-width: 991px) { html, body { overflow-x:hidden; } }
 }
+
+/* Seções editoriais integradas ao design institucional */
+.purpose-section{background:#f1f0eb;}
+.purpose-list{border-top:1px solid #d1d2cc;}
+.purpose-list article{display:grid;grid-template-columns:145px 1fr;gap:10px 24px;padding:28px 0;border-bottom:1px solid #d1d2cc;}
+.purpose-list article span{grid-row:span 2;color:#b87816;font-size:10px;letter-spacing:1.5px;font-weight:700;}
+.purpose-list h3{font:700 clamp(26px,3vw,37px)/1 "Barlow Condensed",sans-serif;text-transform:uppercase;margin:0;}
+.purpose-list p{color:#666d70;font-size:13px;line-height:1.8;margin:0;}
+.faq-section{background:#0b0e10;color:#fff;}
+.faq-accordion .accordion-item{background:transparent;border-bottom:1px solid #2b3235;color:#bfc5c6;}
+.faq-accordion .accordion-button{background:transparent;color:#fff;font:700 24px "Barlow Condensed",sans-serif;text-transform:uppercase;box-shadow:none;padding:24px 0;}
+.faq-accordion .accordion-button:not(.collapsed){color:var(--accent);box-shadow:none;}
+.faq-accordion .accordion-button::after{filter:grayscale(1) brightness(4);}
+.faq-accordion .accordion-body{padding:0 0 25px;color:#aeb5b6;font-size:14px;line-height:1.8;}
+.faq-accordion .accordion-body a{color:var(--accent);}
+@media(max-width:767px){.purpose-list article{grid-template-columns:1fr;gap:10px;}.purpose-list article span{grid-row:auto;}.faq-accordion .accordion-button{font-size:21px;}}
